@@ -32,7 +32,7 @@
 **2.** Clone the forked repository.
 
 ```bash
-git clone https://github.com/Ignyte-community/Open-source-practice
+git clone https://github.com/Ignyte-community/Open-source-practice.git
 ```
 
 **3.** Navigate to the project directory.
