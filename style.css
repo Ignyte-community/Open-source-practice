@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Stylish&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   font-family: poppins, Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   width: 100%;
   background: linear-gradient(#1e3944, #51557f);
+}
+@font-face {
+  font-family: 'Product-sans';
+  src: url(GeneralSans-Medium.otf);
 }
 
 #header_content {
@@ -130,44 +140,192 @@
   width: fit-content;
   padding: 3px;
 }
-
-#grid_f {
-  width: 100%;
-  z-index: 3;
-  margin-top: 6em;
+.collection {
+  display: flex;
+  gap: 2vw;
+  margin-top: 5vw;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+}
+.collection-box {
+  height: 23vw;
+  width: 20vw;
+  background-color: ghostwhite;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.collection-box h2 {
+  margin: 1vw;
+  font-size: 1.3vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.collection-box h3 {
+  background-color: rgb(125, 190, 247);
+  padding: 0.2vw;
+}
+.collection-box h3 a {
+  text-decoration: none;
+  color: black;
+}
+.collection-container {
   display: flex;
   justify-content: center;
+  gap: 1.5vw;
+  /* margin-top: 1vw; */
+  cursor: pointer;
 }
-
-.pro {
-  width: 33%;
-  height: 16em;
-  margin-left: 1em;
-  padding: 10px;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
-#pro1 {
-  background-image: url(https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+.collection-img1 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://cdn.shopify.com/s/files/1/0412/0002/5751/files/undefined_1024x1024.webp?v=1691993760);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-
-#pro2 {
-  background-image: url(https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+.collection-img2 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://static.toiimg.com/thumb/msid-93643962,width-1280,resizemode-4/93643962.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-
-#pro3 {
-  background-image: url(https://images.unsplash.com/photo-1542219550-37153d387c27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+.collection-img3 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://www.remelifestyle.in/wp-content/uploads/2019/07/designer-handbag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-
+.collection-img4 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://www.inventiva.co.in/wp-content/uploads/2022/09/cosmetics.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img5 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://www.beyoung.in/api/cache/catalog/products/hawaiian_shirt/new_hawaiian_shirt_master_image_2_10_05_2023_822x990.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img6 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://media.1bstories.com/stories/manofmany/article-template/posters/fashion/mens-fashion-advice/how-to-wear-white-shoes-with-black-jeans/Landscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img7 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://m.media-amazon.com/images/I/81pFW0b8jZL._AC_UY1100_.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img8 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://media.istockphoto.com/id/533714204/photo/businessman-checking-time-from-watch.jpg?s=612x612&w=0&k=20&c=bJN94WW68Rw8uEogp3GKtBYnhcrNFNnf1SkWb0KDvGo=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img9 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://www.ikea.com/in/en/images/products/silverloenn-sheer-curtains-1-pair-white__1209501_pe909266_s5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img10 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://assets.ajio.com/medias/sys_master/root/20230623/zeQq/6495043242f9e729d786d019/-473Wx593H-464512287-brown-MODEL.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img11 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://www.craftsnchisel.com/cdn/shop/products/brass-leaf-wall-hanging-set-of-8-indian-home-decor-crafts-n-chisel-1_800x.jpg?v=1671239066);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img12 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://m.media-amazon.com/images/I/61u1gNvhx3L._AC_UF894,1000_QL80_.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img13 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://image.made-in-china.com/202f0j00FWNVTjnrlJYL/China-Wholesale-Children-S-Kids-Wear-Baby-Children-Clothes-New-Design-Wedding-Fashion-Girl-Dress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img14 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://static.independent.co.uk/2021/02/25/10/indybest%20kids%20rental%20clothes.jpg?width=1200&height=1200&fit=crop);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img15 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://images.unsplash.com/photo-1604467794349-0b74285de7e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-img16 {
+  height: 6vw;
+  width: 7vw;
+  border-radius: 0.5vw;
+  background-image: url(https://ventra.in/cdn/shop/files/Home_Ventrakidswear_grande.jpg?v=1649340368);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collection-item h4 {
+  margin-top: 0.2vw;
+  margin-bottom: 0.2vw;
+}
 #msg {
   margin: 50px auto;
   text-align: center;
